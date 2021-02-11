@@ -1,5 +1,6 @@
 package br.com.alura.escola.dominio.aluno;
 
+import java.util.ArrayList;
 import java.util.List;
 
 //Entidade por que tem um identificador unico (cpf)
@@ -8,7 +9,7 @@ public class Aluno {
 	private String nome;
 	private CPF cpf;
 	private Email email;
-	private List<Telefone> telefones;
+	private List<Telefone> telefones = new ArrayList<Telefone>();
 
 	public Aluno(String nome, CPF cpf, Email email) {
 		this.nome = nome;
